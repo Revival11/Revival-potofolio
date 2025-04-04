@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024">
+  <title>Portofolio - Revival Fanuel Mumu</title>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    body {
+      background: linear-gradient(to bottom right, #E0F7FA, #0683ff);
+      font-family: 'Poppins', Arial, sans-serif;
+      color: #2C3E50;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      padding: 15px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #2C3E50;
+      font-weight: 600;
+      padding: 10px 15px;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #0683ff;
+    }
+    .container {
+      max-width: 1024px;
+      margin: 100px auto 40px;
+      padding: 0 20px;
+    }
+    .box {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin: 40px 0;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-in-out;
+    }
+    .icon {
+      width: 80px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    h1, h2, h3, h4 {
+      margin: 15px 0;
+    }
+    p {
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+    .skill-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .skill {
+      background: #0683ff;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    footer {
+      margin: 20px 0;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">Tentang Saya</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="#skills">Keahlian</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header class="box">
+      <h1>Revival Fanuel Mumu</h1>
+      <img src="https://cdn-icons-png.flaticon.com/512/1995/1995575.png" alt="Ilustrasi Developer" class="icon">
+      <p>Developer & Inovator | Spesialis Backend, VM, dan Pembuatan Bahasa Pemrograman</p>
+    </header>
+
+    <section id="about" class="box">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Icon Tentang Saya" class="icon">
+      <h2>Tentang Saya</h2>
+      <p>
+        Halo, saya Revival. Saya adalah developer yang antusias dalam mengembangkan solusi teknologi,
+        mulai dari pembuatan API, server, hingga pengembangan bahasa pemrograman custom. Dengan pengalaman
+        di bidang backend, saya selalu berusaha untuk menciptakan sistem yang efisien, scalable, dan inovatif.
+      </p>
+    </section>
+
+    <section id="projects" class="box">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Icon Proyek" class="icon">
+      <h2>Proyek Andalan</h2>
+      <h3>Wolf</h3>
+      <p>
+        Wolf adalah bahasa pemrograman yang saya rancang khusus untuk memudahkan pembuatan API backend.
+        Proyek ini menjadi wujud dedikasi saya dalam mengintegrasikan teknologi modern dengan solusi praktis.
+      </p>
+    </section>
+
+    <section id="skills" class="box">
+      <img src="https://cdn-icons-png.flaticon.com/512/1041/1041895.png" alt="Icon Keahlian" class="icon">
+      <h2>Keahlian</h2>
+      <div class="skill-container">
+        <div class="skill">C++</div>
+        <div class="skill">Python</div>
+        <div class="skill">PHP</div>
+        <div class="skill">Laravel</div>
+        <div class="skill">Flask</div>
+        <div class="skill">Express.js</div>
+        <div class="skill">SQL</div>
+      </div>
+    </section>
+
+    <section id="kontak" class="box">
+      <img src="https://cdn-icons-png.flaticon.com/512/646/646094.png" alt="Icon Kontak" class="icon">
+      <h2>Kontak Saya</h2>
+      <p>
+        Tertarik untuk bekerja sama atau berdiskusi tentang proyek teknologi? Jangan ragu untuk menghubungi saya!
+      </p>
+      <h4>WhatsApp: <a href="https://wa.me/6285824566471" target="_blank">085824566471</a></h4>
+      <h4>Email: <a href="mailto:revivalmumu@gmail.com">revivalmumu@gmail.com</a></h4>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Revival Fanuel Mumu. All Rights Reserved.
+  </footer>
+
+  <script>
+    function reveal() {
+      let elements = document.querySelectorAll('.box');
+      let windowHeight = window.innerHeight;
+      elements.forEach(el => {
+        let elementTop = el.getBoundingClientRect().top;
+        let threshold = 100;
+        if (elementTop < windowHeight - threshold) {
+          el.classList.add("show");
+        } else {
+          el.classList.remove("show");
+        }
+      });
+    }
+    window.addEventListener("scroll", reveal);
+    reveal();
+  </script>
+
+</body>
+</html>
